@@ -1,0 +1,59 @@
+*{
+    font-family: "Molengo", sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 2px solid #a4f7b2;
+    background-color: #a4f7b2;
+}
+.logo{
+    width: 200px;
+    padding: 15px;
+}
+.simbo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.simboarriba{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.simboabajo a {
+margin-right: 10px;
+font-size: 17px;
+text-decoration: none;
+color: rgb(29, 73, 18);
+}
+
+.logof {
+    width: 22px;
+    height: auto;
+}
+.logox {
+    width: 22px;
+    height: auto;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+    padding: 10px 15 px;
+    border-bottom: 2px solid #a4f7b2;
+    background-color: #3b8347;
+    justify-content: center;
+   
+}
+.menu a{
+    text-decoration: none;
+    color: #c4fdce;
+    
+}
+
+.menu :hover{
+    color:  rgb(10, 34, 5);;
+}
