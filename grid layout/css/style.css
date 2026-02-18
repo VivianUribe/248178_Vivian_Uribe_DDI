@@ -1,0 +1,367 @@
+:root {     
+  --color-contenedores: #1C3A5A; 
+  --color-titulos: #F4F4F6; 
+  --color-subtitulos: #7E7E8A; 
+  --color-texto: #F4F4F6; 
+
+  --color-botones-hover: #D0001D; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: var(--color-texto);
+}
+
+
+/* ---------- HEADER ---------- */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px 30px;
+  background-color: rgb(0, 0, 0);
+}
+
+.logo {
+  width: 20%;
+  height: auto;
+
+}
+
+.logo img {
+  width: 200px;        
+  height: auto;
+}
+
+/* Bloque de la derecha (buscador, iconos y botones de idioma) */
+.top-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinea todo a la derecha */
+  gap: 8px;
+}
+
+/* Línea superior con buscador + iconos */
+.top-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Buscador */
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 5px 0 0 5px;
+  background-color: transparent;
+  color: white;
+}
+
+.search button {
+  background-color: rgb(123, 15, 15);
+  color: white;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search button:hover {
+  background-color:rgb(191, 15, 15);
+}
+
+/* Íconos sociales */
+.socials {
+  display: flex;
+  gap: 10px;
+}
+
+.socials button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.socials button:hover {
+  color: rgb(191, 15, 15);
+}
+
+/* Botones de idioma (debajo de buscador e iconos) */
+.lang-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.lang-buttons button {
+  background-color: rgb(123, 15, 15);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.lang-buttons button:hover {
+  background-color: rgb(191, 15, 15);
+}
+
+
+/* ///// NAV ///// */
+.nav {
+  background-color: rgb(61, 5, 5);
+  padding: 10px 0;
+}
+
+.nav ul {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--color-titulos);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: rgb(191, 15, 15);
+}
+
+/* //////POST////// */
+.post {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* Izquierda | Centro | Derecha */
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+/* post izquierda */
+.post-left img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* post centro (video) */
+.video-box {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* post derecha */
+.post-right {
+  background-color:  rgb(61, 5, 5);
+  padding: 20px;
+  display: grid;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 4px 10px  rgb(169, 17, 17);
+}
+
+.post-right img {
+ width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.post-right h3 {
+  color: var(--color-titulos);
+  margin-bottom: 10px;
+}
+
+.post-right p {
+  color: var(--color-subtitulos);
+  margin-bottom: 15px;
+}
+
+.post-right button {
+  background-color: rgb(123, 15, 15);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.post-right button:hover {
+  background-color: rgb(191, 15, 15);
+}
+
+/*////////PERSONAJES/////////- */
+.pers-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* izquierda | centro | derecha */
+  gap: 20px;
+  padding: 20px;
+  align-items: stretch;
+}
+
+/* Izquierda */
+.snd {
+  background-color: black;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 10 px;
+  text-align: center;
+}
+
+.snd button {
+  background-color: rgb(123, 15, 15);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.snd button:hover {
+  background-color: rgb(191, 15, 15);
+}
+
+.snd img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Centro (noticias en fila) */
+.per-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.per-center .per-item {
+  flex: 1;
+  background-color: rgb(123, 15, 15);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.per-center .per-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.per-center .per-item h3 {
+  margin-bottom: 10px;
+}
+
+.per-center .per-item p {
+  text-align: left;
+}
+
+/* Derecha */
+.pro {
+  background-color: rgb(10, 4, 43);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  align-content: center;
+}
+
+.pro h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.pro p {
+  color:white;
+  margin-bottom: 15px;
+}
+
+.pro button {
+  background-color: rgb(123, 15, 15);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pro button:hover {
+  background-color: rgb(191, 15, 15);
+}
+
+
+/* ///////ENLACES/////////*/
+.sponsors {
+  background-color: rgb(10, 4, 43);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.sponsors h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.sponsor-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+
+.sponsor {
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  color: var(--color-subtitulos);
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sponsor:hover {
+  background-color: rgb(123, 15, 15);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+

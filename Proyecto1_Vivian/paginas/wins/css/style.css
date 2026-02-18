@@ -1,0 +1,33 @@
+/* banner*/
+.banner_parallax {
+  height: 60vh;
+  background-image: url("../recursos/banner.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Sección combo */
+.seccion_combo {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Input */
+.campo_codigo {
+  padding: 10px;
+  margin-top: 15px;
+}
+
+/* Botón */
+.boton_aplicar{
+  padding: 10px 25px;
+  background: black;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
