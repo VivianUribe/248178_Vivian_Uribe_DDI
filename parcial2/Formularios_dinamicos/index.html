@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios dinamicos</title>
+</head>
+<body>
+    <form action="">
+         <!--//////////NOMBRE///////////////-->
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" 
+        placeholder="ingresa el nombre" id="input_txt_nombre" >
+     <br>
+      <!--////////////APELLIDO/////////////-->
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" 
+        placeholder="ingresa el apellido" id="input_txt_apellido" >
+        <!--////////////CORREO/////////////-->
+        <br>
+        <label for="correo">correo</label>
+        <input type="text" name="correo" 
+        placeholder="ingresa el correo" id="input_txt_correo" >
+         <!--///////////CONTRASENA//////////////-->
+         <br>
+        <label for="contraseña">contraseña</label>
+        <input type="text" name="contraseña" 
+        placeholder="ingresa el contraseña" id="input_txt_contraseña" >
+          <!--/////////////////////////-->
+
+        <label for="cantidad_correos">Ingresa la cantidad de correos que va a ingresar</label>
+        <input type="number" name="cantidad_correos" id="cantidad_correos" onchange="cambiarNumero(event)">
+        <br>
+        <div class="contenedor_correos" id="contenedor_correos">
+            <label for="correo-1">Ingresa el correo 1</label>
+            <input type="email" name="correo-1" id="correo-1">
+            <br>
+        </div>
+        <br>
+<div id="contenedor_usuarios">
+    <div id="contenedor_usuario" >
+       <label>Nombre:</label>
+        <span>Vivian</span>
+
+       <label>Apellido:</label>
+        <span>Uribe</span>
+    </div>
+</div>
+        <button id="boton_guardar">Guardar datos</button>
+    </form>
+
+    <form id="form_2">
+        <!--////////////NOMBRE/////////////-->
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Nombre">
+        <br>
+      <!--////////////APELLIDO/////////////-->
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido"  placeholder="Apellido" >
+        <!--////////////CORREO/////////////-->
+        <br>
+        <label for="correo">correo</label>
+        <input type="text" name="correo" 
+        placeholder="Correo" >
+         <!--///////////CONTRASENA//////////////-->
+         <br>
+        <label for="contraseña">contraseña</label>
+        <input type="text" name="contraseña" placeholder="Contraseña" >
+          <!--/////////////////////////-->
+          <button type="button" onclick="leerDatos()">Guardar</button>
+    </form>
+</body>
+<script src="js/script.js"></script>
+</html>
