@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="nav">
+        <h1 id="titulo">Inicio</h1>
+
+        <div class="user">
+            <img id="foto_perfil" width="50">
+
+            <!-- NOMBRE USUARIO -->
+            <span id="nombre_admin"></span>
+            <span id="nombre_usuario" style="display:none;"></span>
+
+            <button id="logout">Cerrar sesión</button>
+        </div>
+    </header>
+
+    <hr>
+
+    <h2>Productos</h2>
+
+    <div id="contenedor_productos"></div>
+
+    <!-- SOLO ADMIN -->
+    <div id="zona_admin">
+        <input type="file" id="archivo_productos" accept=".json">
+        <br>
+        <button id="subir_json">Subir productos</button>
+    </div>
+
+    <hr>
+
+    <h2>Editar perfil</h2>
+
+    <div class="perfil">
+        <input type="text" id="nuevo_nombre" placeholder="Nuevo nombre">
+        <input type="file" id="nueva_foto">
+        <br>
+        <button id="guardar_perfil">Guardar cambios</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

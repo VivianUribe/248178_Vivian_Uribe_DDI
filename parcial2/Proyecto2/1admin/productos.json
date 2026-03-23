@@ -1,0 +1,27 @@
+[
+  {
+    "nombre": "Peluche de abeja",
+    "precio": 200,
+    "descripcion": "A los fans de Minecraft les encantará coleccionar a sus personajes favoritos en forma de peluche! Estos personajes bordados miden 20 cm de alto y están hechos de una mezcla de telas y textiles para una experiencia táctil encantadora. Son divertidos para coleccionar, jugar y exhibir.",
+    "foto": "https://minecraftshop.com/cdn/shop/files/MINE-PLU2_FT_MF_1800x1800.jpg?v=1729507593"
+  },
+  {
+    "nombre": "Peluche Creeper",
+    "precio": 250,
+    "descripcion": "¡Te gusten o no, los Creepers son un elemento básico del universo Minecraft ! Presume de tu criatura favorita de Minecraft con este peluche de Creeper . Con 20 cm de altura, este clásico peluche de Creeper es un complemento imprescindible para tu creciente colección de Minecraft .",
+    "foto": "https://minecraftshop.com/cdn/shop/products/MCMATTEL-CREEPERPLUSH-1_1800x1800.png?v=1622666343"
+ },
+ {
+    "nombre": "Peluche Cabra",
+    "precio": 200,
+    "descripcion": "A los fans de Minecraft les encantará coleccionar a sus personajes favoritos, ¡en versión peluche!, de uno de los videojuegos más populares de todos los tiempos. Estos adorables personajes bordados miden aproximadamente 20 cm de largo y están hechos de una mezcla de telas y textiles para una experiencia táctil encantadora. ",
+    "foto": "https://minecraftshop.com/cdn/shop/files/MINE-PLU1_R_MF_1800x1800.jpg?v=1729532536"
+ }
+ ,
+ {
+    "nombre": "Peluche Steve",
+    "precio": 300,
+    "descripcion": "Este peluche de Steve de Minecraft le hará saber a todo el mundo que Steve es tu personaje favorito de Minecraft . Con una altura de 20 cm (8 pulgadas), este peluche de Steve de Minecraft le dará a tu creciente colección de Minecraft la mejora que estabas buscando.",
+    "foto": "https://minecraftshop.com/cdn/shop/products/HHG11-PIP-FE-21-001-2LB_1800x1800.jpg?v=1633008603"
+ }
+]
