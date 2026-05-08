@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas </title>
+    <link rel="stylesheet" href="estilos/style.css">
+
+</head>
+
+<body>
+
+<h1> Canvas </h1>
+
+<div class="panel">
+
+<canvas id="lienzo" width="1000" height="800"></canvas>
+
+<br><br>
+
+<div class="grupo">
+<button id="btn_pincel">Pincel</button>
+<button id="btn_linea">Línea</button>
+<button id="btn_cuadro">Cuadro</button>
+<button id="btn_circulo">Círculo</button>
+<button id="btn_estrella">Estrella</button>
+<button id="btn_sticker">Sticker</button>
+<button id="btn_borrador">Borrador</button>
+
+<input type="file" id="input_sticker" accept="image/*">
+</div>
+
+<div class="grupo">
+<label>Color línea:</label>
+<input type="color" id="color_linea" value="#000000">
+
+<label>Color relleno:</label>
+<input type="color" id="color_relleno" value="#ff0000">
+
+<label>Grosor:</label>
+<input type="range" id="grosor" min="1" max="50" value="5">
+
+<label>Opacidad:</label>
+<input type="range" id="opacidad" min="0" max="1" step="0.1" value="1">
+</div>
+
+<div class="grupo">
+<label><input type="checkbox" id="solo_borde"> Solo borde</label>
+<label><input type="checkbox" id="solo_relleno"> Solo relleno</label>
+</div>
+
+<div class="grupo">
+<button id="btn_bn">Blanco y negro</button>
+<button id="btn_rojo">Rojo</button>
+<button id="btn_verde">Verde</button>
+<button id="btn_azul">Azul</button>
+<button id="btn_sepia">Sepia</button>
+<button id="btn_negativo">Negativo</button>
+<button id="btn_sin_filtro">Sin filtro</button>
+</div>
+
+<div class="grupo">
+<button id="btn_undo">Deshacer</button>
+<button id="btn_redo">Rehacer</button>
+<button id="btn_limpiar">Limpiar</button>
+<button id="btn_guardar">Guardar</button>
+</div>
+
+</div>
+
+<script type="module" src="js/script.js"></script>
+
+</body>
+</html>
